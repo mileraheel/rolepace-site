@@ -86,3 +86,5 @@ product pipeline rather than being a generic numbered list.
 Copy avoids fabricated stats — the scoreboard strip states product
 commitments ("0 fabricated skills, ever") rather than invented market
 numbers, consistent with the platform's own no-fabrication principle.
+
+GitHub Pages deployment enabled.
