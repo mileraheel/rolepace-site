@@ -50,27 +50,6 @@ if ('IntersectionObserver' in window) {
   revealTargets.forEach((el) => el.classList.add('is-visible'));
 }
 
-// Early access form -- placeholder handler.
-// Replace this with a POST to your backend's signup/waitlist endpoint
-// (or a third-party form service) once one is wired up.
-const earlyForm = document.getElementById('earlyForm');
-const formNote = document.getElementById('formNote');
-
-if (earlyForm && formNote) {
-  earlyForm.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const email = document.getElementById('earlyEmail').value.trim();
-    if (!email) return;
-
-    // TODO: wire this to a real endpoint, e.g.:
-    // fetch('/api/early-access', { method: 'POST', body: JSON.stringify({ email }) })
-    console.log('Early access request (not yet wired to a backend):', email);
-
-    formNote.textContent = "Thanks -- we'll be in touch as seats open up.";
-    earlyForm.reset();
-  });
-}
-
 // Footer year
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
