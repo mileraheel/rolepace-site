@@ -139,6 +139,12 @@ img { max-width: 100%; display: block; }
   letter-spacing: -0.01em;
 }
 
+.nav-wrap {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
 .primary-nav {
   display: flex;
   align-items: center;
@@ -151,7 +157,16 @@ img { max-width: 100%; display: block; }
   font-weight: 600;
   color: var(--ink);
 }
-.primary-nav a:not(.btn):hover { color: var(--teal-dark); }
+.primary-nav a:hover { color: var(--teal-dark); }
+
+/* Register/Log in stay visible at every breakpoint, including mobile --
+   only the plain nav links (How it works, etc.) collapse behind the
+   hamburger toggle. See @media (max-width: 720px) below. */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
 .nav-toggle {
   display: none;
